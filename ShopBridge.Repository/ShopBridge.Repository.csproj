@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShopBridge.Dal.Entities\ShopBridge.Dal.Entities.csproj" />
+    <ProjectReference Include="..\ShopBridge.Dal\ShopBridge.Dal.csproj" />
+    <ProjectReference Include="..\ShopBridge.Dto\ShopBridge.Dto.csproj" />
+    <ProjectReference Include="..\ShipBridge.Contracts\ShopBridge.Repository.Contracts.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="AutoMapper" />
+    <None Remove="Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+</Project>
